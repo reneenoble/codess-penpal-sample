@@ -11,8 +11,6 @@ Now that we've cloned in our Git repo to VS Code, we'll set up our dev evnironme
 For this project we're going to need a couple of libraries. 
 You'll see how to set up a virtula enviroment and add the needed libraries.
 
-<br>
-
 ## Create the virtual environment
 If you do lots of projects it's best to store your libraries for each project seperatelyusing a **virtual environment**.
 
@@ -64,7 +62,7 @@ We'll need a requirements.txt file. This is a way to list all the needed librari
     python-dotenv
     requests
     ```
-    
+
 <br>
 
 ## Install the libraries
@@ -76,16 +74,11 @@ Whether your installing in your virtual environment, or to your whole computer s
 **You should be ready to go now!**
 <br>
 
-```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
 </details>
 
 <br>
 
-## Set up - Troubshooting
+### Set up - Troubshooting
 
 ***Hopefully*** your libraries are all their and working for you now!
 
@@ -107,13 +100,6 @@ If VS Code later says that you are missing something, eg Flask, you can come bac
 
     If you skipped that step try creating a virtual env if you skipped that before. 
 
-```pip install -r requirements.txt```
-
-```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
 </details>
 
 <br>
@@ -190,11 +176,6 @@ To get started we'll need to make a form that collects the text to be translated
 7. Run your code and go to the address in a web browser.
 
 
-```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
 </details>
 
 <br>
@@ -205,7 +186,7 @@ To get started we'll need to make a form that collects the text to be translated
 > 1. Create a folder called static
 > 2. In static create a file called style.css
 > 3. copy the contents of my style.css file to yours
-> 4. I've made a few changes to the index.html file, change yours to match mine.
+> 4. I've made a few changes to the index.html file (and stored them in pretty-index.html), update your index.html file to match my pretty-index.html
 > 5. Finally you just need the typewritter image. Download typewriter.jpg from my static folder, and add it to your static folder. 
 
 
@@ -289,14 +270,10 @@ Next up lets add our second page, where we'll later display the resutls of our t
 > 1. If you haven't completed the previous bonus activity, do that first. 
 > 2. In static create a file called result-style.css
 > 3. copy the contents of my result-style.css file to yours
-> 4. I've made a few changes to the result.html file, change yours to match mine.
+> 4. I've made a few changes to the results.html file (and stored them in pretty-index.html), update your results.html file to match my pretty-results.html
 > 5. Finally you just need the paper image. Download paper.jpeg from my static folder, and add it to your static folder. 
 
-```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
+
 </details>
 
 <br>
@@ -335,12 +312,6 @@ from dotenv import load_dotenv
 load_dotenv()
 ```
 
-
-```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
 </details>
 
 <br>
@@ -370,7 +341,7 @@ load_dotenv()
 
     2. where you just removed the code, add this code instead.
 
-    ```html
+    ```python
     # Load the values from .env
     key = os.environ['KEY']
     endpoint = os.environ['ENDPOINT']
@@ -402,10 +373,6 @@ load_dotenv()
     translated_text = translator_response[0]['translations'][0]['text']
     ```
 
+3. Test your website again, how does it do?
 
-```js
-  function logSomething(something) {
-    console.log('Something', something);
-  }
-  ```
 </details>
